@@ -1,0 +1,79 @@
+[
+{
+    "nome":"JavaScript",
+    "descrição":"O JavaScript é a linguagem da web",
+    "ano_criação":1995,
+    "criador":"Brendan Eich",
+    "link":"https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+},
+{
+    "nome":"Python",
+    "descrição":"Python é uma linguagem de programação interpretada de alto nível para propósitos gerais.",
+    "ano_criação":1991,
+    "criador":"Guido van Rossum",
+    "link":"https://docs.python.org/pt-br/3.14/"
+},
+{
+    "nome":"Java",
+    "descrição":"Java é uma linguagem de programação orientada a objetos e uma plataforma de computação desenvolvida pela Sun Microsystems.",
+    "ano_criação":1995,
+    "criador":"James Gosling",
+    "link":"https://docs.oracle.com/en/java/"
+},
+{
+    "nome":"C#",
+    "descrição":"C# (pronuncia-se 'C sharp') é uma linguagem de programação moderna, orientada a objetos e de tipo seguro desenvolvida pela Microsoft.",
+    "ano_criação":2000,
+    "criador":"Anders Hejlsberg",
+    "link":"https://docs.microsoft.com/pt-br/dotnet/csharp/"
+},
+{
+    "nome":"C++",
+    "descrição":"C++ é uma linguagem de programação de propósito geral, de médio nível, com suporte para programação orientada a objetos.",
+    "ano_criação":1985,
+    "criador":"Bjarne Stroustrup",
+    "link":"https://isocpp.org/"
+},
+{
+    "nome":"Go",
+    "descrição":"Go é uma linguagem de programação de código aberto desenvolvida pelo Google, projetada para ser simples, eficiente e confiável.",
+    "ano_criação":2009,
+    "criador":"Robert Griesemer, Rob Pike, e Ken Thompson",
+    "link":"https://go.dev/doc/"
+},
+{
+    "nome":"Ruby",
+    "descrição":"Ruby é uma linguagem de programação dinâmica e de código aberto com foco na simplicidade e produtividade.",
+    "ano_criação":1995,
+    "criador":"Yukihiro Matsumoto",
+    "link":"https://www.ruby-lang.org/pt/"
+},
+{
+    "nome":"Swift",
+    "descrição":"Swift é uma linguagem de programação poderosa e intuitiva criada pela Apple para construir apps para iOS, Mac, Apple TV e Apple Watch.",
+    "ano_criação":2014,
+    "criador":"Apple Inc.",
+    "link":"https://developer.apple.com/swift/"
+},
+{
+    "nome":"Kotlin",
+    "descrição":"Kotlin é uma linguagem de programação moderna e estaticamente tipada usada por mais de 60% dos desenvolvedores Android profissionais.",
+    "ano_criação":2011,
+    "criador":"JetBrains",
+    "link":"https://kotlinlang.org/"
+},
+{
+    "nome":"TypeScript",
+    "descrição":"TypeScript é um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem.",
+    "ano_criação":2012,
+    "criador":"Microsoft",
+    "link":"https://www.typescriptlang.org/"
+},
+{
+    "nome":"PHP",
+    "descrição":"PHP é uma linguagem de script de uso geral popular, especialmente adequada para o desenvolvimento web.",
+    "ano_criação":1995,
+    "criador":"Rasmus Lerdorf",
+    "link":"https://www.php.net/"
+}
+]

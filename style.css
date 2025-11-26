@@ -1,0 +1,218 @@
+/* Estilos aplicados a todo o corpo (body) da página */
+body{
+    /* Define uma cor de fundo escura e suave */
+    background-color: #121212; /* Cor de fallback caso a imagem não carregue */
+    /* Adiciona a imagem de fundo */
+    background-image: 
+        linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.8)), /* Filtro escuro para legibilidade */
+        url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop'); /* URL da imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-attachment: fixed; /* Fixa a imagem durante a rolagem */
+    /* Ativa o layout Flexbox para o body */
+    display: flex;
+    /* Organiza os filhos do body (header, main, footer) em uma coluna vertical */
+    flex-direction: column;
+    /* Garante que o body ocupe no mínimo 100% da altura da tela (viewport height) */
+    min-height: 100vh;
+    /* Remove a margem padrão e adiciona um espaçamento interno para não colar nas bordas */
+    margin: 0;    
+    /* Adiciona um preenchimento na parte inferior igual à altura do rodapé para evitar sobreposição */
+    padding-bottom: 5rem; /* Ajuste este valor se a altura do rodapé mudar */
+    /* Define uma família de fontes moderna e legível para todo o site */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    /* Define a cor padrão do texto */
+    color: #e8edf1;
+}
+
+/* Estilos para o contêiner da busca (<div class="search-container">) */
+.search-container {
+    /* Usa Flexbox para alinhar o campo de input e o botão */
+    display: flex;
+    /* Centraliza horizontalmente o input e o botão dentro do contêiner */
+    justify-content: center;
+    /* Cria um espaço entre o input e o botão */
+    gap: 0.5rem;
+}
+
+/* Estilos para o campo de texto da busca (<input class="search-field">) */
+.search-field {
+    /* Adiciona um espaçamento interno ao campo de texto */
+    padding: 0.5rem;
+    /* Adiciona uma borda sutil */
+    border: 1px solid #333;
+    /* Arredonda os cantos do campo de texto */
+    border-radius: 4px;
+    /* Define a cor de fundo */
+    background-color: #2a2a2a;
+    color: #e8edf1;
+    width: 300px;
+    /* Define o tamanho da fonte do texto dentro do campo */
+    font-size: 1rem;
+    /* Adiciona uma transição suave para o foco */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Estilo para quando o campo de busca está em foco (selecionado) */
+.search-field:focus {
+    border-color: #007bff; /* Muda a cor da borda para um azul vibrante */
+    outline: 0; /* Remove o contorno padrão do navegador */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); /* Adiciona uma sombra de foco suave */
+}
+
+/* Estilos gerais para botões (<button class="btn">) */
+.btn {
+    /* Adiciona espaçamento interno (0.5rem vertical, 1rem horizontal) */
+    padding: 0.5rem 1rem;
+    /* Remove a borda padrão do botão */
+    border: none;
+    /* Arredonda os cantos do botão */
+    border-radius: 4px;
+    font-size: 1rem;
+    /* Muda o cursor para uma "mãozinha" para indicar que é clicável */
+    cursor: pointer;
+    /* Adiciona uma transição suave para todas as propriedades */
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease;
+}
+
+/* Estilos específicos para o botão primário (<button class="primary-btn">) */
+.primary-btn {
+    /* Define a cor de fundo do botão para um azul vibrante */
+    background-color: #007bff;
+    /* Define a cor do texto do botão como branco */
+    color: white;
+}
+
+/* Estilos para o botão primário quando o mouse está sobre ele (:hover) */
+.primary-btn:hover {
+    /* Escurece ligeiramente a cor de fundo do botão */
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Eleva o botão levemente */
+}
+
+/* Estilos para cada item da lista de links (<li>) */
+.footer-link-item {
+    /* Exibe os itens da lista na mesma linha */
+    display: inline;
+}
+
+/* Estilos para o cabeçalho principal (<header class="main-header">) */
+.main-header {
+    /* Define a cor de fundo do cabeçalho para um azul escuro */
+    background-color: #1c1c1c;
+    /* Define a cor do texto dentro do cabeçalho como branco */
+    color: white;
+    /* Adiciona um espaçamento interno (preenchimento) de 1rem (geralmente 16px) */
+    padding: 1rem;
+    /* Centraliza o texto e o conteúdo do cabeçalho */
+    text-align: center;
+    /* Define a ordem de exibição para 1 (primeiro item) */
+    order: 1;
+}
+co
+/* Estilos para o título principal dentro do cabeçalho (<h1 class="header-title">) */
+.header-title {
+    /* Adiciona uma margem na parte inferior do título para separá-lo do campo de busca */
+    margin-bottom: 1rem;
+}
+
+/* Estilos para a área de conteúdo principal (<main class="main-content">) */
+.main-content {
+    /* Adiciona um espaçamento interno de 20 pixels */
+    padding: 20px;
+    /* Faz com que esta área cresça para ocupar o espaço vazio entre o header e o footer */
+    flex-grow: 1;
+    /* Define a ordem de exibição para 2 (depois do header) */
+    order: 2;
+}
+
+/* Estilos para o contêiner dos cards (<section class="card-container">) */
+.card-container {
+    /* Usa Flexbox para alinhar os cards */
+    display: flex;
+    /* Permite que os cards quebrem para a próxima linha se não houver espaço */
+    flex-wrap: wrap;
+    /* Centraliza os cards horizontalmente */
+    justify-content: center;
+    /* Cria um espaço entre os cards */
+    gap: 1.5rem;
+}
+
+/* Estilos para cada card individual (<article class="card">) */
+.card {
+    background-color: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos para a seção de conteúdo dentro do main (<section class="content-section">) */
+.content-section {
+    /* Define a cor de fundo como branco para destacar do fundo da página */
+    background-color: #1c1c1c;
+    color: #e8edf1;
+    /* Adiciona uma sombra sutil para dar uma sensação de profundidade */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    /* Adiciona um espaçamento interno de 15 pixels */
+    padding: 15px;
+    /* Arredonda os cantos da seção */
+    border-radius: 5px;
+}
+
+/* Estilos para o rodapé principal (<footer class="main-footer">) */
+.main-footer {
+    /* Fixa o rodapé na parte inferior da janela de visualização */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* Define a cor de fundo igual à do cabeçalho para consistência */
+    background-color: #1c1c1c;
+    /* Adiciona um espaçamento interno */
+    padding: 1rem;
+    /* Garante que o rodapé fique acima de outros conteúdos, se necessário */
+    z-index: 1000;
+}
+
+/* Estilos para a lista de links no rodapé (<ul class="footer-links">) */
+.footer-links {
+    /* Remove os marcadores (bolinhas) da lista */
+    list-style: none;
+    /* Remove o preenchimento padrão da lista */
+    padding: 0;
+    /* Remove a margem padrão para ajudar na centralização */
+    margin: 0;
+    /* Usa Flexbox para alinhar os itens da lista */
+    display: flex;
+    /* Organiza os links em uma linha (comportamento padrão, mas explícito aqui) */
+    flex-direction: row;
+    /* Centraliza os links horizontalmente */
+    justify-content: center;
+    /* Cria um espaço de 1rem entre cada link */
+    gap: 1rem;
+}
+
+/* Estilos para os links (<a>) dentro do rodapé */
+.footer-link {
+    /* Define a cor do texto do link como branco */
+    color: white;
+    /* Remove o sublinhado padrão dos links */
+    text-decoration: none;
+    /* Adiciona uma transição suave para a mudança de cor */
+    transition: color 0.15s ease-in-out;
+}
+
+/* Estilos para os links do rodapé quando o mouse está sobre eles (:hover) */
+.footer-link:hover {
+    /* Muda a cor do link para um azul mais claro ao passar o mouse */
+    color: #007bff;
+    /* Garante que o sublinhado não apareça ao passar o mouse */
+    text-decoration: none;
+}
